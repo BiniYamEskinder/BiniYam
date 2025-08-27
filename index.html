@@ -6,40 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="logo.png">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
         <div class="background"></div>
         <div class="like"></div>
         <div class="nav">
-            <div class="aaa">WEB AGENCY</div>
+            <div class="aaa" data-aos="fade-right">WEB AGENCY</div>
             <div class="bbb">
                 <a href="index.html">
-                    <div id="iii">Home</div>
+                    <div id="iii" data-aos="fade-down">Home</div>
                 </a>
                 <a href="index.html">
-                    <div id="iii">Skills</div>
+                    <div id="iii" data-aos="fade-down">Skills</div>
+                </a>
+                <a href="#servicess">
+                    <div id="iii" data-aos="fade-down">Services</div>
                 </a>
                 <a href="index.html">
-                    <div id="iii">Services</div>
+                    <div id="iii" data-aos="fade-down">Portfolio</div>
                 </a>
                 <a href="index.html">
-                    <div id="iii">Portfolio</div>
-                </a>
-                <a href="index.html">
-                    <div id="iii">Work</div>
+                    <div id="iii" data-aos="fade-down">Work</div>
                 </a>
             </div>
         </div>
 
         <div class="hhh">
             <div class="main">
-                <h1>WEB AGENCY</h1>
+                <h1 data-aos="zoom-in">WEB AGENCY</h1>
                 <div class="buttons">
-                    <a href="index.html">
+                    <a href="index.html" data-aos="zoom-out-right">
                             <Button style="margin-right: 5px;" class="bubu1">BUY NOW</Button>
                     </a>
-                    <a href="index.html">
+                    <a href="index.html" data-aos="zoom-out-left">
                         <Button style="margin-left: 5px;" class="bubu2">ABOUT US</Button>
                     </a>
                 </div>
@@ -47,8 +48,11 @@
         </div>
 
         <div class="nrt">
-            <div class="room">
-                <img src="icon/coder.png" alt="Writting" class="icon">
+            <div class="room"data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+                <div class="imageContainer">
+                    <img src="icon/coder.png" alt="Writting" class="icon">
+                </div>
                 <h1 class="Tit">
                     Code
                 </h1>
@@ -56,8 +60,11 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente beatae at voluptates eos voluptas eum, accusantium ex ducimus vitae. Eligendi labore obcaecati ab. Accusantium, libero. Nihil, facere tempora!
                 </p>
             </div>
-            <div class="room">
-                <img src="icon/employer.png" alt="Writting" class="icon" style="height: 76px; padding-top: 13px;">
+            <div class="room"data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+                <div class="imageContainer">
+                    <img src="icon/employer.png" alt="Writting" class="icon" style="height: 76px; padding-top: 13px;">
+                </div>
                 <h1 class="Tit">
                     Documented
                 </h1>
@@ -65,8 +72,11 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, eos at. Possimus, adipisci porro!
                 </p>
             </div>
-            <div class="room">
-                <img src="icon/map.png" alt="Writting" class="icon">
+            <div class="room"data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+                <div class="imageContainer">
+                    <img src="icon/map.png" alt="Writting" class="icon">
+                </div>
                 <h1 class="Tit">
                     Optimized
                 </h1>
@@ -74,8 +84,11 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga cupiditate magni natus aliquid temporibus, quasi harum tempore.
                 </p>
             </div>
-            <div class="room">
-                <img src="icon/Monitor.png" alt="Writting" class="icon">
+            <div class="room"data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+                <div class="imageContainer">
+                    <img src="icon/Monitor.png" alt="Writting" class="icon">
+                </div>
                 <h1 class="Tit">
                     Retina
                 </h1>
@@ -85,7 +98,7 @@
             </div>
         </div>
 
-        <div class="secondSection">
+        <div class="secondSection" id="servicess">
             <p class="Services">
                 SERVICES
             </p>
@@ -150,6 +163,7 @@
                 </div>
             </div>
         </div>
+
         <div class="profesional">
             <p class="pprrooffee">
                 We are <span class="sspan">Profesionals.</span>
@@ -158,6 +172,7 @@
                 CONTACT US
             </button>
         </div>
+
         <div class="forthSection">
             <div class="taptpa">RECENT POSTS</div>
             <div class="idont">
@@ -208,6 +223,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="lastSection">
             <div class="asdfg">
                 COPYRIGHT@2024.ALL RIGTHS RESERVED
@@ -217,5 +234,10 @@
                 <img class="Account" src="Acco.png" alt="Account">
             </div>
         </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
